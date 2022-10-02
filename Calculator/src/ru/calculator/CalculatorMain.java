@@ -11,18 +11,18 @@ public class CalculatorMain {
     private final JFrame frame;
 
     public CalculatorMain() {
-        // <-- Инициализация окна -->
+        // Инитиализация окна
         frame = new JFrame();
         frame.setTitle("Калькулятор RUR");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // задаём функцию крестика: закрывать окно
-        frame.setResizable(false); // окно нельзя будет растягивать
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Закрыватель окна
+        frame.setResizable(false); // Запрет ресайза
 
         CalculatorPanel panel = new CalculatorPanel();
         frame.add(panel); // добавить панель в окно
 
         frame.setSize(250, 300);
-        frame.setLocationRelativeTo(null); // устанавливает положение окна по центру экрана
-        frame.setVisible(true); // открываем окно
+        frame.setLocationRelativeTo(null); // По центру экрана
+        frame.setVisible(true); 
     }
 
     public static void main(String[] args) {
